@@ -1,3 +1,4 @@
+  
 const Modal = {
   open() {
     document.querySelector('.modal-overlay').classList.add('active');
@@ -9,12 +10,12 @@ const Modal = {
 
 const Storage = {
   get() {
-    return JSON.parse(localStorage.getItem('dev.finances:transactions')) || [];
+    return JSON.parse(localStorage.getItem('dev.finance:transactions')) || [];
   },
 
   set(transactions) {
     localStorage.setItem(
-      'dev.finances:transactions',
+      'dev.finance:transactions',
       JSON.stringify(transactions)
     );
   },
